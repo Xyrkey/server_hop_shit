@@ -60,8 +60,8 @@ local function TPReturner(placeId)
 		end
 	end
 end
-local module = {}
-function module:Teleport(placeId)
+local a = {}
+function a:Teleport(placeId)
 	while wait() do
 		pcall(function()
 			TPReturner(placeId)
@@ -71,4 +71,4 @@ function module:Teleport(placeId)
 		end)
 	end
 end
-return module
+return a
